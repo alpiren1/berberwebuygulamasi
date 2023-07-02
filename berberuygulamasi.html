@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Erkek Kuaförü Uygulaması</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1><center>Stil Erkek Kuaförü</center></h1>
+  </header>
+
+  <nav>
+    <ul>
+      <h3><li><a href="#hakkimizda">Hakkımızda</a></li></h3>
+      <h3><li><a href="#hizmetler">Hizmetler</a></li></h3>
+      <h3><li><a href="#randevu">Randevu Al</a></li></h3>
+      <h3><li><a href="#iletisim">İletişim</a></li></h3>
+    </ul>
+  </nav>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      var name = document.getElementById('name').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+  
+  
+      alert('Randevunuz alındı!');
+  
+      form.reset();
+    });
+  });
+  </script>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <h3><p>Merhaba adım Alperen soyadım Gülsoy yaklaşık on senedir</p></h3>
+    <h3><p> erkek kuaförüyüm,her türlü saç modelini yapabilirim  </p></h3>
+    <h3><p>dükkanım Balıkesir-Altıeylül Zağnoz Paşa Camii yanı.</p></h3>
+  </section>
+
+  <section id="randevu">
+    <h2>Randevu Al</h2>
+    <form>
+      <h3><label for="name">Adınız Soyadınız:</label></h3>
+      <input type="text" id="name" name="name" required><br>
+
+      <h3><label for="date">Tarih:</label></h3>
+      <input type="date" id="date" name="date" required><br>
+
+      <h3><label for="time">Saat:</label></h3>
+      <input type="time" id="time" name="time" required><br>
+      
+      <input type="submit" value="Randevu Al">
+    </form>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetler</h2>
+    <ul>
+      <h3><li>Saç kesimi :100TL</li></h3>
+      <h3><li>Saç yıkama :25TL </li></h3>
+      <h3><li>Sakal traşı :50TL</li></h3>
+      <h3><li>Saç boyama :300TL</li></h3>
+    </ul>
+  </section>
+
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <h3><p>Telefon: 0554 189 7233</p></h3>
+    <h3><p>E-posta: alperengulsoy37@gmail.com</p></h3>
+  </section>
+
+  <footer>
+    <p>Telif Hakkı &copy; 2023 Stil Erkek Kuaförü</p>
+  </footer>
+</body>
+</html>
